@@ -10,7 +10,6 @@ source:
   sha256: 6121d5386a39b51eab73bc244282d9a3e0e59d441caa35edbec037d285b0f98d
 
 build:
-  skip: true  # [py<36]
   skip: true  # [win]
   entry_points:
     - pyRing = pyRing.pyRing:main
@@ -36,7 +35,8 @@ requirements:
     - lalsuite
     - matplotlib-base
     - pesummary
-    - seaborn
+    - raynest
+    - seaborn-base
     - scipy
     - {{ pin_compatible('numpy') }}
 
