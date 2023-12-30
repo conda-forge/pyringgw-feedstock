@@ -1,5 +1,5 @@
 {% set name = "pyRingGW" %}
-{% set version = "2.3.0" %}
+{% set version = "2.4.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pyRingGW-{{ version }}.tar.gz
-  sha256: 6121d5386a39b51eab73bc244282d9a3e0e59d441caa35edbec037d285b0f98d
+  sha256: 7d1485dc7f9ca51b4d53ae3f222fa204227313a75169992b288390b3feb652cc
 
 build:
   skip: true  # [win]
@@ -33,9 +33,8 @@ requirements:
     - gwpy
     - h5py
     - lalsuite
-    - matplotlib-base
+    - matplotlib-base 3.6.3
     - pesummary
-    - raynest
     - seaborn-base
     - scipy
     - {{ pin_compatible('numpy') }}
