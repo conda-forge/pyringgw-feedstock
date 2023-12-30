@@ -33,9 +33,8 @@ requirements:
     - gwpy
     - h5py
     - lalsuite
-    - matplotlib-base
+    - matplotlib-base 3.6.3
     - pesummary
-    - raynest
     - seaborn-base
     - scipy
     - {{ pin_compatible('numpy') }}
