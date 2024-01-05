@@ -33,7 +33,7 @@ requirements:
     - gwpy
     - h5py
     - lalsuite
-    - matplotlib-base 3.6.3
+    - matplotlib-base
     - pesummary
     - seaborn-base
     - scipy
