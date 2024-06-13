@@ -1,5 +1,5 @@
 {% set name = "pyRingGW" %}
-{% set version = "2.5.0" %}
+{% set version = "2.6.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pyRingGW-{{ version }}.tar.gz
-  sha256: 0a4f431be6e81129424a27498fa8e5cb07a9d1442fdd9f5780f59ccdb47de261
+  sha256: 8bce5ddbec098e63e5386d5ab27e21b377cab9a40cd87899fad587851a0b16de
 
 build:
   skip: true  # [win]
@@ -19,6 +19,7 @@ build:
 requirements:
   build:
     - {{ compiler('c') }}
+    - {{ stdlib("c") }}
   host:
     - python
     - setuptools
