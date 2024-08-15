@@ -14,7 +14,7 @@ build:
   entry_points:
     - pyRing = pyRing.pyRing:main
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   build:
@@ -38,7 +38,6 @@ requirements:
     - pesummary
     - seaborn-base
     - scipy
-    - {{ pin_compatible('numpy') }}
 
 test:
   imports:
