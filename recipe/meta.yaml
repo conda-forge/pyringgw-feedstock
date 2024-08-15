@@ -10,7 +10,7 @@ source:
   sha256: 8bce5ddbec098e63e5386d5ab27e21b377cab9a40cd87899fad587851a0b16de
 
 build:
-  skip: true  # [win]
+  skip: true  # [win or py>=312]
   entry_points:
     - pyRing = pyRing.pyRing:main
   script: {{ PYTHON }} -m pip install . -vv
