@@ -54,10 +54,13 @@ tests:
   - requirements:
       run:
         - pip
+        - pytest
     script:
       # Check metadata
       - python -m pip check
       - python -m pip show pyringgw
+      # Run test suite
+      - python -m pytest --pyargs -ra -v pyRing.tests
       # Check entry point
       - pyRing --help
 
