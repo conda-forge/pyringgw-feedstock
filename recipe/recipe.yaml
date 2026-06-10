@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: pyRingGW
-  version: 2.8.1
+  version: "2.9.2"
 
 package:
   name: ${{ name|lower }}
@@ -10,10 +10,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/${{ name | lower }}-${{ version }}.tar.gz
-  sha256: 8154ea4381c93753954fc4ceb291b5257b322731a598109d6bcb58ef8ceb9baf
+  sha256: 4538680e023a29358884a99103e6a6cc45023a12ec7f9b6e9ca8eff387dcf4e2
 
 build:
-  number: 1
+  number: 0
   python:
     entry_points:
       - pyRing = pyRing.pyRing:main
