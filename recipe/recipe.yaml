@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: pyRingGW
-  version: "2.10.0"
+  version: "2.10.1"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/${{ name | lower }}-${{ version }}.tar.gz
-  sha256: ce9ce8364178fde43ab21ee17dbc1453cd80bab21869c4440384865da4488072
+  sha256: fbf27902004a8e2dea7980b12b0d63c6e11d8c66a92477792b1790a9d1fdcb72
 
 build:
   number: 0
