@@ -37,6 +37,7 @@ requirements:
     - pip
     - python
     - setuptools
+    - setuptools_scm >=8
   run:
     - corner
     - cpnest
@@ -59,6 +60,7 @@ tests:
       # Check metadata
       - python -m pip check
       - python -m pip show pyringgw
+      - python -c "import pyRing; from importlib.metadata import version; assert pyRing.__version__ == version('pyRingGW') == '${{ version }}'"
       # Run test suite
       - python -m pytest --pyargs -ra -v pyRing.tests
       # Check entry point
